@@ -1,4 +1,4 @@
-# AI Assistant — Web
+# OpenChat — Web
 
 Next.js 16 · React 19 · TypeScript 7 · Tailwind CSS 4 · shadcn/ui
 

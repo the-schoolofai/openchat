@@ -66,7 +66,7 @@ function CopyAction({ text }: { text: string }) {
 
 function Typing() {
   return (
-    <span className="inline-flex gap-1 py-2" aria-label="Assistant is typing">
+    <span className="inline-flex gap-1 py-2" aria-label="OpenChat is typing">
       {[0, 150, 300].map((d) => (
         <i
           key={d}

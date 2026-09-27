@@ -10,7 +10,7 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8", extra="ignore")
 
     # App
-    app_name: str = "Assistant API"
+    app_name: str = "OpenChat API"
     environment: str = "development"
     log_level: str = "INFO"
     cors_origins: list[str] = Field(default_factory=lambda: ["http://localhost:3000"])

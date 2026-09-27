@@ -16,45 +16,6 @@ wheels = [
 ]
 
 [[package]]
-name = "ai-assistant-api"
-version = "1.0.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "anthropic" },
-    { name = "fastapi", extra = ["standard"] },
-    { name = "httpx" },
-    { name = "ollama" },
-    { name = "openai" },
-    { name = "pydantic" },
-    { name = "pydantic-settings" },
-]
-
-[package.dev-dependencies]
-dev = [
-    { name = "pytest" },
-    { name = "pytest-asyncio" },
-    { name = "ruff" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "anthropic", specifier = ">=1.8" },
-    { name = "fastapi", extras = ["standard"], specifier = ">=0.141" },
-    { name = "httpx", specifier = ">=0.28" },
-    { name = "ollama", specifier = ">=0.6" },
-    { name = "openai", specifier = ">=3.19" },
-    { name = "pydantic", specifier = ">=2.11" },
-    { name = "pydantic-settings", specifier = ">=2.15" },
-]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "pytest", specifier = ">=9.1" },
-    { name = "pytest-asyncio", specifier = ">=1.2" },
-    { name = "ruff", specifier = ">=0.16" },
-]
-
-[[package]]
 name = "annotated-doc"
 version = "0.0.5"
 source = { registry = "https://pypi.org/simple" }
@@ -101,6 +62,45 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/a9/d2/f4d173e22df740bc37b1db102b386ba719b66e95b0f0d751f556b387e6d2/anyio-4.15.1.tar.gz", hash = "sha256:9f28306018cbd6d329e64a36d58256edff76dd996fe423bc957326e578b82a94", size = 276966, upload-time = "2026-09-05T10:42:39.44Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/12/b8/4bd346e22b28902df4d651910f5242c28d84e4a5c2435ca5c3f797ed7e2e/anyio-4.15.1-py3-none-any.whl", hash = "sha256:6152fdbbf9a77fdec97731721bebf7c4c44f7c29b424b0065826173efc7ed101", size = 132079, upload-time = "2026-09-05T10:42:37.923Z" },
+]
+
+[[package]]
+name = "api"
+version = "1.0.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "anthropic" },
+    { name = "fastapi", extra = ["standard"] },
+    { name = "httpx" },
+    { name = "ollama" },
+    { name = "openai" },
+    { name = "pydantic" },
+    { name = "pydantic-settings" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "pytest" },
+    { name = "pytest-asyncio" },
+    { name = "ruff" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "anthropic", specifier = ">=1.8" },
+    { name = "fastapi", extras = ["standard"], specifier = ">=0.141" },
+    { name = "httpx", specifier = ">=0.28" },
+    { name = "ollama", specifier = ">=0.6" },
+    { name = "openai", specifier = ">=3.19" },
+    { name = "pydantic", specifier = ">=2.11" },
+    { name = "pydantic-settings", specifier = ">=2.15" },
+]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "pytest", specifier = ">=9.1" },
+    { name = "pytest-asyncio", specifier = ">=1.2" },
+    { name = "ruff", specifier = ">=0.16" },
 ]
 
 [[package]]

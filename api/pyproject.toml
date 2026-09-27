@@ -1,5 +1,5 @@
 [project]
-name = "ai-assistant-api"
+name = "api"
 version = "1.0.0"
 description = "FastAPI backend for the AI Assistant: local Ollama models first, cloud providers as fallback."
 readme = "README.md"
